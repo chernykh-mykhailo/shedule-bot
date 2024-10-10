@@ -129,10 +129,14 @@ empty_weekend = {
         "00:00 - 01:00": []
 }
 
-today_schedule = copy.deepcopy(load_schedule('today_schedule.json', empty_weekday, empty_weekend))
-tomorrow_schedule = copy.deepcopy(load_schedule('tomorrow_schedule.json', empty_weekday, empty_weekend))
-weekday_default_schedule = copy.deepcopy(load_schedule('weekday_default_schedule.json', empty_weekday, {}))
-weekend_default_schedule = copy.deepcopy(load_schedule('weekend_default_schedule.json', empty_weekend, {}))
+today_schedule = copy.deepcopy(load_schedule(
+    'today_schedule.json', empty_weekday, empty_weekend))
+tomorrow_schedule = copy.deepcopy(load_schedule(
+    'tomorrow_schedule.json', empty_weekday, empty_weekend))
+weekday_default_schedule = copy.deepcopy(load_schedule(
+    'weekday_default_schedule.json', empty_weekday, {}))
+weekend_default_schedule = copy.deepcopy(load_schedule(
+    'weekend_default_schedule.json', empty_weekend, {}))
 
 
 def is_weekend(date):
